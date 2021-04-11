@@ -8,20 +8,19 @@ Install docker desktop https://docs.docker.com/desktop/
 
 Clone the repo and do the following:
 
-create the image + container 
+- create the image + container 
 ```docker compose up -d```
 
-create a bash session on the container 
+- create a bash session on the container 
 ```docker exec -i local_db bash``` 
 
-log into the database using credentials in `./database.env`
+- log into the database using credentials in `./database.env`
 ```psql -d database -U user -W```
 
-verify that the table contains data from my_table.csv
+- verify that the table contains data from my_table.csv
 ```
 select * from public.my_table;
 ```
-gives:
 ```
     a     |    b     |    c
 ----------+----------+----------
